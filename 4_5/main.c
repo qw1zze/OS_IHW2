@@ -81,4 +81,5 @@ int main() {
         sem_destroy(&forks->forks[i]);
     }
     munmap(forks, sizeof(Forks));
+    shm_unlink(shar);
 }
